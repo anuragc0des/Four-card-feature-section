@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Montserrat:wght@400;700&family=Outfit:wght@400;700&family=Overpass:wght@700&family=Poppins:wght@200;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.container .text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.text span {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.text h1 {
+  font-size: 2rem;
+  color: hsl(234, 12%, 34%);
+}
+
+.text p {
+  max-width: 550px;
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+}
+
+.container .flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.flex-container .textbox {
+  width: 350px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+}
+
+.textbox .img {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.textbox .img img {
+  height: 50px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cyan {
+  border-top: 5px solid;
+  border-color: hsl(180, 62%, 55%);
+}
+
+.red {
+  border-top: 5px solid;
+  border-color: hsl(0, 78%, 62%);
+}
+
+.orange {
+  border-top: 5px solid;
+  border-color: hsl(34, 97%, 64%);
+}
+
+.blue {
+  border-top: 5px solid;
+  border-color: hsl(212, 86%, 64%);
+}
+
+.textbox h4 {
+  color: hsl(234, 12%, 34%);
+}
+
+.textbox p {
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+}
+
+.attribution {
+  margin-top: 40px;
+}
+
+@media (max-width: 1080px) {
+  body {
+    padding: 80px;
+  }
+
+  .flex-container .textbox {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 960px) {
+  body {
+    padding: 40px;
+  }
+
+  .flex-container .textbox {
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 762px) {
+  body {
+    padding: 40px;
+  }
+
+  .container .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-container .textbox {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 762px) {
+  .flex-container .textbox {
+    max-width: 300px;
+  }
+}
